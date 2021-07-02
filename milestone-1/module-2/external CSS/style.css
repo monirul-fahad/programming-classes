@@ -1,0 +1,18 @@
+h1 {
+    color:aqua;
+    background-color: brown;
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h3 {
+    display: inline;
+    font-size: 3em;
+
+}
+
+.h3 {
+    text-align: center;
+
+}
