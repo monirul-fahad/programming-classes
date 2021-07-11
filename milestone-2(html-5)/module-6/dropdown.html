@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav > Ul {
+        display: flex;
+        justify-content: center;
+        background-color: blanchedalmond;
+      }
+      nav li {
+        list-style: none;
+        margin: 0 2em;
+        padding: 10px;
+      }
+      nav li a {
+        text-decoration: none;
+        font-size: 2em;
+        color: black;
+      }
+      nav li:hover {
+        background-color: lightgray;
+      }
+
+      .dropdown {
+        display: none;
+        position: absolute;
+        background-color: blanchedalmond;
+        padding: 0;
+      }
+      .dropdown li {
+        padding: 10px 0;
+        margin: 0;
+      }
+      nav > ul > li:hover > ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li>
+          <a href=""
+            >Club
+            <ul class="dropdown">
+              <li><a href="">Real Madrid</a></li>
+              <li><a href="">Man United</a></li>
+              <li><a href="">Barcelona</a></li>
+              <li><a href="">Juventus</a></li>
+            </ul>
+          </a>
+        </li>
+        <li>
+          <a href=""
+            >Country
+            <ul class="dropdown">
+              <li><a href="">Portugal</a></li>
+              <li><a href="">Argentina</a></li>
+              <li><a href="">France</a></li>
+              <li><a href="">Germany</a></li>
+            </ul>
+          </a>
+        </li>
+        <li><a href="">About</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Hy, I am making a dropdown.</h1>
+    </header>
+  </body>
+</html>

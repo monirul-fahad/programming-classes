@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input table</title>
+    <link rel="stylesheet" href="styles/nav.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="5-home.html">Home</a></li>
+          <li><a href="4-input.html">Form</a></li>
+          <li><a href="3-table.html">Table</a></li>
+          <li><a href="1-audio.html">Audio</a></li>
+          <li><a href="2-semantic.html">Semantic</a></li>
+        </ul>
+      </nav>
+      <h1>Welcome to my Pitha Dokan.</h1>
+    </header>
+    <form action="">
+      <p>
+        Name:
+        <input type="text" name="name" placeholder="Enter your name" id="" />
+      </p>
+      <p>
+        Email:
+        <input type="text" name="email" placeholder="Enter your email" id="" />
+      </p>
+      <fieldset>
+        <legend>Select your pitha.</legend>
+        <p>
+          <label for="chitoy">
+            <input type="radio" name="pitha" id="chitoy" /> Chitoy
+          </label>
+        </p>
+        <p>
+          <label for="bhapa">
+            <input type="radio" name="pitha" id="bhapa" /> Bhapa
+          </label>
+        </p>
+        <p>
+          <label for="Chal Puri">
+            <input type="radio" name="pitha" id="Chal Puri" /> Chal Puri
+          </label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Select your bhorta</legend>
+        <p>
+          <label for="shorisha"
+            ><input type="checkbox" name="bhorta" id="shorisha" />Shorisha
+            bhorta</label
+          >
+        </p>
+        <p>
+          <label for="shutki"
+            ><input type="checkbox" name="bhorta" id="shutki" />Shutki
+            bhorta</label
+          >
+        </p>
+        <p>
+          <label for="begun"
+            ><input type="checkbox" name="bhorta" id="begun" />Begun
+            bhorta</label
+          >
+        </p>
+      </fieldset>
+      <p>
+        Special Instruction
+        <br />
+        <textarea name="instraction" id="" cols="30" rows="10"></textarea>
+      </p>
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>
