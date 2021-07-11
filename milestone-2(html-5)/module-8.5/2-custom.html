@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      --dark-border: 2px solid black;
+      --main-color: orange;
+      --border-color: slateblue;
+      --background-color: slateblue;
+    }
+    h1 {
+      color: var(--main-color);
+    }
+    h2 {
+      border: 2px solid var(--border-color);
+    }
+    p {
+      color: var(--main-color);
+    }
+    footer {
+      clear: both;
+      border: var(--dark-border);
+      color: var(var(--main-color));
+    }
+    .sidenav,
+    .blog {
+      float: left;
+      height: 500px;
+    }
+    .sidenav {
+      background-color: springgreen;
+      width: 200px;
+    }
+    .blog {
+      background-color: tomato;
+      width: calc(100% - 200px);
+    }
+  </style>
+  <body>
+    <header>
+      <h1>I am exploring Custom Properties.</h1>
+      <p>Welcome to my website</p>
+    </header>
+    <main>
+      <h2>My Awesome content</h2>
+      <section>
+        <aside class="sidenav">My side navigation.</aside>
+        <div class="blog">
+          <h3>Blogs</h3>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><small>Copyright</small></p>
+    </footer>
+  </body>
+</html>
