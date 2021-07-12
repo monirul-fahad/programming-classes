@@ -1,0 +1,65 @@
+h1 {
+  border: 2px solid tomato;
+  padding: 20px;
+  margin: 30px;
+  background-color: turquoise;
+}
+
+span,
+a {
+  font-size: 30px;
+  /* display: block; */
+}
+
+h2 {
+  /* display: inline; */
+}
+
+div {
+  border: 2px solid tomato;
+  padding: 20px;
+  margin: 30px;
+  background-color: turquoise;
+  height: 200px;
+}
+
+h3 {
+  border: 10px solid rgb(173, 39, 16);
+  padding: 20px;
+  margin: 30px;
+  background-color: rgb(160, 169, 194);
+  display: inline-block;
+  margin: 20px;
+}
+
+p {
+  display: inline-block;
+  margin: 50px;
+}
+
+li {
+  color: chocolate;
+  font-size: 3em;
+}
+
+li:first-child {
+  color: cyan;
+}
+
+li:last-child {
+  background-color: darkgoldenrod;
+}
+
+li:nth-child(2n + 1) {
+  background-color: darkorange;
+}
+
+h2::before {
+  content: "Hello ";
+  color: brown;
+}
+
+h2::after {
+  content: ". Bye";
+  color: brown;
+}

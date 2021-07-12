@@ -119,3 +119,48 @@ nav a:hover {
   transform: scale(1.3);
   transition: transform 1.5s ease-in-out;
 }
+
+/* Login form   */
+
+.login-container {
+  margin-bottom: 2em;
+  padding: 3em 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(172, 204, 140, 0.568);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.login-form input,
+button {
+  font-size: 1.3em;
+  margin: 7px 0;
+  border: 1px solid lightgrey;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.login-form button {
+  background-color: rgba(207, 184, 140, 0.863);
+  color: rgba(0, 0, 0, 0.664);
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+.login-form button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 102, 75, 0.671);
+}
