@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgba(240, 220, 195, 0.335);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+   width: 1000px;
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+
+}
+
+hr {
+    border: 1px solid #d1d1d1;
+    margin-bottom: 27px;
+  }
+/* Great player section  */
+.great-players{
+    margin-bottom: 30px;
+}
+
+.title-section{
+    color: rgb(240, 116, 28);
+font-size: 24px;
+margin: 0 0 20px 0;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.player img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* great club section  */
+
+
+.clubs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+}
+
+.club {
+    display: flex;
+}
+
+.club .club-image img {
+    width: 225px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.club .club-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.club .club-info button {
+    width: 110px;
+    padding: 5px;
+    margin: 20px 60px 0 0px;
+    border-radius: 7px;
+    background-color: rgb(250, 235, 175);
+    border: 1px solid rgba(240, 220, 195, 0.335);
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    .title-section{
+        text-align: center;
+    }
+   .players{
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .clubs {
+       grid-template-columns: repeat(1, 1fr);
+   }
+
+}
