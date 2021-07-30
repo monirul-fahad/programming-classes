@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1::before {
+        content: "Hello bro, ";
+        color: chocolate;
+      }
+
+      h1::after {
+        content: ". Ok, bye now.";
+      }
+      blockquote::before {
+        content: open-quote;
+        color: crimson;
+        font-size: 1.5em;
+      }
+      blockquote::after {
+        content: close-quote;
+        color: crimson;
+        font-size: 1.5em;
+      }
+      .section-title {
+        display: inline-block;
+      }
+      .section-title::after,
+      .section-title:hover::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: darkcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Having fun with pesudo element</h1>
+    <h1>Having fun with pesudo element</h1>
+    <section>
+      <h2 class="section-title">Cristiano Ronaldo's Best Quote</h2>
+      <blockquote>
+        Your love makes me strong, your hate makes me unstoppable.
+      </blockquote>
+      <blockquote>A quitter never wins-and-a winner never quits.</blockquote>
+      <blockquote>
+        The ladder of success is never crowded at the top.
+      </blockquote>
+    </section>
+  </body>
+</html>
