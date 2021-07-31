@@ -24,3 +24,10 @@ console.log(totalPrice);
 console.log(priceDifference)
 console.log(eggPriceMultiplication)
 console.log(orangeQuantity)
+
+// special editon 
+var firstNumber = 0.1;
+var secondNumber = 0.2;
+
+var total = firstNumber + secondNumber;
+console.log(total.toFixed(1))
