@@ -66,7 +66,6 @@ var myNumber= 5;
 var myFactorial = factorial(myNumber);
 console.log("my number's factorial is:-",myFactorial)
 
-
 function factorial2(number2) {
     var fact2 = 1;
     var i = 1;
@@ -80,6 +79,9 @@ function factorial2(number2) {
 
 console.log('factorial of 5:- ',factorial2(5))
 
+
+
+// recursion factor
 function factorial (n) {
     if (n==1) {
         return 1;
@@ -88,4 +90,4 @@ function factorial (n) {
     }
 }
 
-console.log('factorial of:- ', factorial(5))
+console.log('factorial of:- ', factorial(6))
