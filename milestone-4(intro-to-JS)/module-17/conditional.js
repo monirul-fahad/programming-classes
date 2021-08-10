@@ -20,3 +20,23 @@ if (chickerPrice < myMoney) {
 } else {
     console.log('Smash Potato with lentil soup')
 }
+
+// multiple-condition 
+
+var gotJob = false;
+var moneySaved = 1150000;
+var hasflat = false;
+
+// && condition 
+// if (gotJob == true && moneySaved > 200000) {
+//     console.log('cholo biye kori')
+// } else {
+//     console.log('tor kopale biya nai.')
+// }
+
+// or condition 
+if (gotJob == true || moneySaved > 200000) {
+    console.log('cholo biye kori')
+} else {
+    console.log('tor kopale biya nai.')
+}

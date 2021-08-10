@@ -66,3 +66,15 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 console.log(positiveValues)
+
+
+
+
+
+let perfectName = friendsName[0];
+for (let i = 0; i < friendsName.length; i++) {
+if (friendsName[i].length == 5) {
+    perfectName = friendsName[i];
+    return perfectName;
+    }  
+} 
