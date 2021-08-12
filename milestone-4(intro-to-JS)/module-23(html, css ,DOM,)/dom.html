@@ -16,7 +16,16 @@
       <h1>welcome to my blog website</h1>
     </header>
     <main>
-      <section>
+      <section id="blog">
+        <header>
+          <h2>Blog lists</h2>
+          <ul id="blog-list">
+            <li>Blog-1</li>
+            <li>Blog-2</li>
+            <li>Blog-3</li>
+            <li>Blog-4</li>
+          </ul>
+        </header>
         <article class="my-blog">
           <h3>My Awesome Blog-1</h3>
           <p>
@@ -44,7 +53,7 @@
             tempore odio quisquam veritatis! Ea.
           </p>
         </article>
-        <article>
+        <article class="my-blog">
           <h3>My Awesome Blog-4</h3>
           <p>
             Animi eaque laborum expedita deserunt, ipsa molestias odio?
@@ -80,6 +89,37 @@
       secondTitle.innerText = "Title update by JS";
       secondTitle.style.padding = "10px";
       secondTitle.style.margin = "20px";
+
+      //CREATE AND ADD ELEMENT BY USING JS
+      //create the element
+      const li = document.createElement("li");
+      li.innerText = "Blog-5";
+      //where to add
+      const ul = document.getElementById("blog-list");
+      //append new element
+      ul.appendChild(li);
+
+      //ADD ARTICLE
+      const article = document.createElement("article");
+      article.classList.add("my-blog");
+      //   one way
+      //   const h3 = document.createElement("h3");
+      //   h3.innerText = "My Awesome Blog-5";
+      //   const p = document.createElement("p");
+      //   p.innerText =
+      //     "eaque laborum expedita deserunt, ipsa molestias odioVoluptate illo magni deleniti, natus sed aliquam. Numquam eaque impedit ullam, exercitationem voluptatum at cumque soluta odit tempore odio quisquam veritatis!";
+      //   article.appendChild(h3);
+      //   article.appendChild(p);
+
+      //alternative way
+      article.innerHTML = `
+    <h3>My Awesome Blog-5</h3>
+    <p>eaque laborum expedita deserunt, ipsa molestias odioVoluptate illo magni deleniti, natus sed aliquam. Numquam eaque impedit ullam, exercitationem voluptatum at cumque soluta odit tempore odio quisquam veritatis!</p>
+    `;
+
+      //parent of article
+      const blogSection = document.getElementById("blog");
+      blogSection.appendChild(article);
 
       //BY CLASS NAME
       const blogs = document.getElementsByClassName("my-blog");
