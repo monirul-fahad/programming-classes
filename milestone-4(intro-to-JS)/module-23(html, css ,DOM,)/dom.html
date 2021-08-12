@@ -17,7 +17,7 @@
     </header>
     <main>
       <section>
-        <article>
+        <article class="my-blog">
           <h3>My Awesome Blog-1</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minus
@@ -26,7 +26,7 @@
             earum magni?
           </p>
         </article>
-        <article>
+        <article class="my-blog">
           <h3 id="second-title">My Awesome Blog-2</h3>
           <p>
             Quod nulla fugit cupiditate excepturi perferendis consequatur,
@@ -35,8 +35,17 @@
             deserunt accusamus.
           </p>
         </article>
-        <article>
+        <article class="my-blog">
           <h3>My Awesome Blog-3</h3>
+          <p>
+            Animi eaque laborum expedita deserunt, ipsa molestias odio?
+            Voluptate illo magni deleniti, natus sed aliquam. Numquam eaque
+            impedit ullam, exercitationem voluptatum at cumque soluta odit
+            tempore odio quisquam veritatis! Ea.
+          </p>
+        </article>
+        <article>
+          <h3>My Awesome Blog-4</h3>
           <p>
             Animi eaque laborum expedita deserunt, ipsa molestias odio?
             Voluptate illo magni deleniti, natus sed aliquam. Numquam eaque
@@ -49,6 +58,8 @@
     <script>
       //   console.log(document);
       const student = { name: "Fahad", age: 16, height: 60 };
+
+      //TAG NAME
       const blogTitles = document.getElementsByTagName("h3");
       for (const h3 of blogTitles) {
         // console.log(h3.innerText);
@@ -59,13 +70,25 @@
         // console.log(p);
       }
 
+      //BY ID NAME
       const secondTitle = document.getElementById("second-title");
+
+      //ADDING CSS STYLE
       secondTitle.style.color = "white";
       secondTitle.style.backgroundColor = "salmon";
       secondTitle.style.textAlign = "center";
       secondTitle.innerText = "Title update by JS";
       secondTitle.style.padding = "10px";
       secondTitle.style.margin = "20px";
+
+      //BY CLASS NAME
+      const blogs = document.getElementsByClassName("my-blog");
+      for (const blog of blogs) {
+        blog.style.border = "2px solid orange";
+        blog.style.borderRadius = "8px";
+        blog.style.margin = "10px";
+        blog.style.padding = "10px";
+      }
     </script>
   </body>
 </html>
