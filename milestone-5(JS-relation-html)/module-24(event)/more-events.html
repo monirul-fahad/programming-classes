@@ -18,11 +18,11 @@
       <button id="deleteButton" disabled>Delete</button>
     </section>
     <script>
-      document
-        .getElementById("deleteButton")
-        .addEventListener("click", function () {
-          document.getElementById("secret-info").style.display = "none";
-        });
+      // document
+      //   .getElementById("deleteButton")
+      //   .addEventListener("click", function () {
+      //     document.getElementById("secret-info").style.display = "none";
+      //   });
       //focus
       document
         .getElementById("delete-confirm")
@@ -52,7 +52,7 @@
       //keyup
       document
         .getElementById("delete-confirm")
-        .addEventListener("keyup", function (event) {
+        .addEventListener("keypress", function (event) {
           const deleteBtn = document.getElementById("deleteButton");
           if (event.target.value == "delete") {
             deleteBtn.removeAttribute("disabled");
