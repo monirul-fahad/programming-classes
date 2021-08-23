@@ -16,3 +16,8 @@ const numbers2 = [...numbers]
 // numbers.push(55)
 console.log(numbers2);
 
+
+const nayikas=['mousumi' , 'popy' ,'shabnur', 'purnima' ]
+
+const arr2 = [...nayikas]
+ console.log(arr2)
