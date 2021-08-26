@@ -3,7 +3,7 @@ function loadComment(){
     .then(res => res.json())
     .then(data => comments(data))
 };
-loadComment()
+
 
 function comments(comments){
     const commentContainer = document.getElementById('comments');
