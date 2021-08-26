@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <style>
+      .post {
+        background-color: rgb(51, 89, 90);
+        padding: 15px;
+        margin: 10px;
+        border: 2px solid rgb(221, 103, 18);
+        border-radius: 10px;
+      }
+      .post h2 {
+        color: rgb(219, 166, 30);
+      }
+      .post p {
+        color: rgb(223, 213, 194);
+        font-size: 1.3em;
+        width: 65%;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is practice site.</h1>
+    <button onclick="loadUsers()">Users</button>
+    <button onclick="loadPosts()">posts</button>
+    <!-- users name  -->
+    <ul id="users"></ul>
+
+    <!-- posts -->
+    <section id="posts"></section>
+    <script src="./index.js"></script>
+  </body>
+</html>
