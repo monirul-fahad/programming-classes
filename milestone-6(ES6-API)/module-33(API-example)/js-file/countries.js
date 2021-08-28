@@ -15,6 +15,7 @@ const displayCountries = (countries) =>{
         const div = document.createElement('div')
         div.classList.add('country');
         div.innerHTML = `
+        
         <h3>${country.name}</h3>
         <p>${country.capital}</p>
         <button onclick="loadCountryByName('${country.name}')"> Details </button>
