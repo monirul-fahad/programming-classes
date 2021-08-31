@@ -1,0 +1,7 @@
+api key- a94912e1d73f05ad74535bfd6d2f65bd
+
+movie details- https://api.themoviedb.org/3/movie/550?api_key=a94912e1d73f05ad74535bfd6d2f65bd
+
+topRated- https://api.themoviedb.org/3/movie/top_rated?api_key=a94912e1d73f05ad74535bfd6d2f65bd
+
+image path- https://image.tmdb.org/t/p/original/2CAL2433ZeIihfX1Hb2139CX0pW.jpg
