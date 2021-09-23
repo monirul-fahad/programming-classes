@@ -1,10 +1,12 @@
 import React from "react";
+import { addToDb } from "../utilities/fakedb";
 
 const Cosmetic = (props) => {
   const { name, id, price } = props.cosmetic;
   const handlePurchase = (id) => {
     //set to local storage
     console.log(id);
+    addToDb(id);
   };
   return (
     <div>
