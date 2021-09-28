@@ -1,0 +1,6 @@
+.product-container {
+  display: flex;
+  border: 2px solid lightgray;
+  padding: 3px 3px 7px 3px;
+  margin-bottom: 5px;
+}
